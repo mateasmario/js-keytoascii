@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Key to ASCII</title>
+        <script>
+            function editText(event) {
+                $x = event.keyCode;
+                document.getElementById("text").innerHTML = event.keyCode;
+            }
+        </script>
+    </head>
+    <body style="padding-top: 25px;" onkeypress="editText(event)">
+        <center>
+            <h1 id="text">No key pressed</h1>
+        </center>
+    </body>
+</html>
